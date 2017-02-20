@@ -13,12 +13,12 @@ var http=require('http'),
 			res.writeHead(200,{
 				'Content-Type':'text/plain'
 			});
-			res.end('home page');
+			res.end('about page');
 		}else if(pathname === '/redirect'){
 			res.writeHead(301,{
 				'Location':'/'
 			});
-			res.end('home page');
+			res.end('redirect page');
 		}else{
 			res.writeHead(400,{
 				'Content-Type':'text/plain'
